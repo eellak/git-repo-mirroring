@@ -2,11 +2,13 @@
 
 # Script for syncing itminedu github mirror repos
 
+homedir="$HOME"
+
 echo -e "\n$(date)"
 
 for org in 'itminedu' 'PDM-OpenGov' 'eellak'
 do
-  dir="/home/git/mirrors-$org"
+  dir="$homedir/mirrors-$org"
   echo -e "Now doing ##### $org ##### repos\n-------------------------"
   for repo in $(ls "$dir")
   do
