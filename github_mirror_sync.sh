@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Script for syncing itminedu github mirror repos
+# Script for syncing itminedu github mirror repos and print output in simple
+# log format.
 
 homedir="$HOME"
 
