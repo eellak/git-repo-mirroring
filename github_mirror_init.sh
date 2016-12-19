@@ -19,7 +19,7 @@ if [[ "$des_org" == "itminedu" || "$des_org" == "PDM-OpenGov" || "$des_org" == "
 then
   # If repo comes from a github repo and is not a wiki repo.
   # Get repo homepage & description and save it in variables desc & hmpg.
-  if [[ "$domain" == "github.com"  && "$repo" != "*.mirror" ]]
+  if [[ "$domain" == "github.com"  && "$repo" != *".wiki" ]]
   then
     vars=$(grep -m 2 -e description -e homepage <<< \
       "$(curl https://api.github.com/repos/$st_org/$repo 2> /dev/null)")
@@ -33,7 +33,7 @@ then
   fi
 
   # If repo is not a wiki then create a new repo in destination organisation.
-  if [[ "$repo" != "*.mirror" ]]
+  if [[ "$repo" != *".wiki" ]]
   then
     curl \
       -H "Authorization: token $token" \
