@@ -38,7 +38,7 @@ then
     curl \
       -H "Authorization: token $token" \
       -d "{\"name\":\"${repo}\",\"description\":\"${desc}\",\"homepage\": \"${hmpg}\"}" \
-      "https://api.github.com/orgs/$des_org/repos &> /dev/null"
+      "https://api.github.com/orgs/$des_org/repos" &> /dev/null
   fi
 
   ## Manage the actual repo.
