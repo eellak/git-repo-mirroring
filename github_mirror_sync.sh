@@ -7,7 +7,7 @@ homedir="$HOME"
 
 echo -e "\n$(date)"
 
-for org in 'itminedu' 'PDM-OpenGov' 'eellak'
+for org in 'itminedu' 'PDM-OpenGov' 'eellak' 'OBI-GRIPO'
 do
   dir="$homedir/mirrors-$org"
   echo -e "Now doing ##### $org ##### repos\n-------------------------"

@@ -15,7 +15,7 @@ token="$5"
 ## Prepare the destination organisation for importing the repo.
 
 # Only work for itminedu, PDM-OpenGov, eellak destination organisations.
-if [[ "$des_org" == "itminedu" || "$des_org" == "PDM-OpenGov" || "$des_org" == "eellak" ]]
+if [[ "$des_org" == "itminedu" || "$des_org" == "PDM-OpenGov" || "$des_org" == "eellak" || "$des_org" == "OBI-GRIPO" ]]
 then
   # If repo comes from a github repo and is not a wiki repo.
   # Get repo homepage & description and save it in variables desc & hmpg.
